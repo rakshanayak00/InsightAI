@@ -1,0 +1,166 @@
+/* InsightAI Modern SaaS Dark Theme CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Inter', sans-serif;
+    color: #F3F4F6;
+}
+
+/* Global Background Styling */
+.stApp {
+    background-color: #0B0F19;
+}
+
+/* Glassmorphism Card System */
+.glass-card {
+    background: rgba(17, 24, 39, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.glass-card:hover {
+    border-color: rgba(59, 130, 246, 0.4);
+    transform: translateY(-2px);
+}
+
+/* Metric Card Customization */
+.metric-card {
+    background: linear-gradient(135deg, rgba(31, 41, 55, 0.8) 0%, rgba(17, 24, 39, 0.9) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.metric-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: #3B82F6;
+}
+
+.metric-card.emerald::before { background: #10B981; }
+.metric-card.purple::before { background: #8B5CF6; }
+.metric-card.amber::before { background: #F59E0B; }
+.metric-card.rose::before { background: #F43F5E; }
+
+.metric-title {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #9CA3AF;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 6px;
+}
+
+.metric-value {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #F9FAFB;
+    margin-bottom: 4px;
+}
+
+.metric-delta {
+    font-size: 0.82rem;
+    font-weight: 600;
+}
+
+.delta-positive { color: #10B981; }
+.delta-negative { color: #F43F5E; }
+.delta-neutral { color: #9CA3AF; }
+
+/* AI Insight Card Badges */
+.insight-card {
+    background: rgba(17, 24, 39, 0.85);
+    border-left: 4px solid #3B82F6;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-bottom: 16px;
+}
+
+.insight-card.opportunity { border-left-color: #10B981; }
+.insight-card.warning { border-left-color: #F59E0B; }
+.insight-card.risk { border-left-color: #EF4444; }
+
+.insight-tag {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 8px;
+}
+
+.tag-opportunity { background: rgba(16, 185, 129, 0.15); color: #34D399; }
+.tag-warning { background: rgba(245, 158, 11, 0.15); color: #FBBF24; }
+.tag-risk { background: rgba(239, 68, 68, 0.15); color: #FCA5A5; }
+.tag-info { background: rgba(59, 130, 246, 0.15); color: #60A5FA; }
+
+/* Header Styling */
+.main-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    background: linear-gradient(90deg, #60A5FA 0%, #A78BFA 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #9CA3AF;
+    font-size: 1.05rem;
+    margin-bottom: 25px;
+}
+
+/* Sidebar Custom Styling */
+section[data-testid="stSidebar"] {
+    background-color: #080B11;
+    border-right: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Custom Button Enhancement */
+.stButton > button {
+    background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%);
+    color: #FFFFFF;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 24px;
+    transition: all 0.2s ease;
+}
+
+.stButton > button:hover {
+    background: linear-gradient(135deg, #1D4ED8 0%, #1E40AF 100%);
+    box-shadow: 0 4px 14px 0 rgba(37, 99, 235, 0.39);
+    transform: translateY(-1px);
+}
+
+/* Table Custom Styling */
+.dataframe {
+    border-radius: 8px !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Footer Styling */
+.footer-text {
+    text-align: center;
+    color: #6B7280;
+    font-size: 0.85rem;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
