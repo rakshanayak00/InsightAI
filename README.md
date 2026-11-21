@@ -1,4 +1,3 @@
-
 # ⚡ InsightAI – Business Intelligence & Predictive Analytics Platform
 
 [![Python](https://img.shields.io/badge/Python-3.12%2B-blue.svg)](https://www.python.org/)
@@ -11,6 +10,14 @@
 **InsightAI** is a Python-based Business Intelligence and Predictive Analytics application designed to help users explore retail sales data, understand customer purchasing behaviour, analyze product profitability, and forecast future sales.
 
 The application combines data processing, interactive dashboards, machine learning, and deep learning techniques through a Streamlit interface.
+
+---
+
+## 🚀 Live Demo
+
+**[Click Here to Explore InsightAI](https://insightai-raksh.streamlit.app)**
+
+Explore the deployed Business Intelligence platform directly in your browser. No installation required!
 
 ---
 
@@ -119,56 +126,6 @@ graph TD
 | Plotly | Interactive data visualizations |
 | OpenPyXL | Excel report generation |
 | Docker | Application containerization |
-
----
-
-## 📁 Repository Directory Structure
-
-```text
-InsightAI/
-├── .streamlit/
-│   └── config.toml
-├── assets/
-│   └── style.css
-├── data/
-│   └── sample_sales_data.csv
-├── models/
-│   ├── __init__.py
-│   └── lstm_forecaster.py
-├── saved_models/
-│   └── .gitkeep
-├── utils/
-│   ├── __init__.py
-│   ├── logger.py
-│   ├── data_loader.py
-│   ├── data_cleaner.py
-│   ├── eda.py
-│   ├── customer_analytics.py
-│   ├── product_analytics.py
-│   ├── ai_insights.py
-│   └── reporting.py
-├── charts/
-│   ├── __init__.py
-│   └── plotly_charts.py
-├── pages/
-│   ├── 1_🏠_Home.py
-│   ├── 2_📂_Upload_Dataset.py
-│   ├── 3_🧹_Data_Cleaning.py
-│   ├── 4_📊_Dashboard.py
-│   ├── 5_👥_Customer_Analytics.py
-│   ├── 6_📦_Product_Analytics.py
-│   ├── 7_💡_AI_Business_Insights.py
-│   ├── 8_📈_LSTM_Sales_Forecasting.py
-│   └── 9_📄_Reports.py
-├── scratch/
-│   └── test_suite.py
-├── app.py
-├── Dockerfile
-├── docker-compose.yml
-├── requirements.txt
-├── .gitignore
-└── README.md
-```
 
 ---
 
